@@ -1,10 +1,7 @@
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
 .departmentsList, .addDepartment {
   background: #f7f7f7;
   float:left;
+  margin-bottom: 1em;
 }
 .departmentsList > div {
   border-bottom: 1px solid #eee;
@@ -30,6 +27,8 @@ h1 {
   text-align: center;
   padding-top: 0.6em;
   cursor:pointer;
+  float: right;
+  width: 50px;
 }
 .departmentsList .changes i {
   color: white;

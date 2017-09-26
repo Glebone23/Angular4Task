@@ -2,11 +2,11 @@
 <section class="container">
   <div class="departmentsList col-sm-7 col-xs-12">
       <div *ngFor="let department of departments; let objectKey = index">
-        <div class="content col-11">
+        <div class="content">
           <a href="/department/{{department.id}}" class="title">{{department.name}}</a><br>
           <span class="description">{{department.description}}</span>
         </div>
-        <div class="changes col-1" (click)="removeDepartment(department.id, objectKey)">
+        <div class="changes" (click)="removeDepartment(department.id, objectKey)">
           <i class="fa fa-trash-o" aria-hidden="true"></i>
         </div>
       </div>
