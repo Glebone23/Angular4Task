@@ -1,0 +1,58 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.departmentsList, .addDepartment {
+  background: #f7f7f7;
+  float:left;
+}
+.departmentsList > div {
+  border-bottom: 1px solid #eee;
+  padding:1em;
+  position: relative;
+  height: 80px;
+}
+.departmentsList .changes, .departmentsList .content {
+  float:left;
+}
+.departmentsList .title {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #807e7e;
+}
+.departmentsList .description {
+  font-size: 0.9em;
+  color: #aaa;
+}
+.departmentsList .changes {
+  background: #e26161;
+  height: 100%;
+  text-align: center;
+  padding-top: 0.6em;
+  cursor:pointer;
+}
+.departmentsList .changes i {
+  color: white;
+  font-size:1.6em;
+}
+.addDepartment {
+  padding: 1em;
+}
+.addDepartment h4 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #807e7e;
+  margin-bottom: 0.7em;
+}
+.addDepartment input {
+  margin-bottom: 0.7em;
+  border-radius: 0;
+}
+.addDepartment button {
+  margin-top: 0.3em;
+  width:30%;
+  float:right;
+  background: rgba(0, 123, 255, 0.68);
+  color: white;
+  border-radius: 0;
+}

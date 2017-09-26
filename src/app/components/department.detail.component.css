@@ -1,0 +1,9 @@
+.employeesList {
+  background: #f7f7f7;
+  padding:1em;
+  color: #807e7e;
+}
+.employee {
+  padding: 1em;
+  border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,9 @@
+<h1>Employees of {{departmentName}} department</h1>
+<section class="container employeesList">
+  <div *ngIf="areEmployees; else emptyList">
+    <div *ngFor="let employee of employees; let i = index;" class="employee">
+      <span>{{i + 1}}. {{employee.firstName}} {{employee.lastName}}</span>
+    </div>
+  </div>
+  <ng-template #emptyList>Sorry, but currently {{departmentName}} department is empty</ng-template>
+</section>

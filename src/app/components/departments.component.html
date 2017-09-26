@@ -1,0 +1,24 @@
+<h1>Departments</h1>
+<section class="container">
+  <div class="departmentsList col-sm-7 col-xs-12">
+      <div *ngFor="let department of departments; let objectKey = index">
+        <div class="content col-11">
+          <a href="/department/{{department.id}}" class="title">{{department.name}}</a><br>
+          <span class="description">{{department.description}}</span>
+        </div>
+        <div class="changes col-1" (click)="removeDepartment(department.id, objectKey)">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </div>
+      </div>
+  </div>
+  <div class="addDepartment col-sm-4 ml-sm-4 col-xs-12">
+      <h4>Add department</h4>
+      <form (submit)="addDepartment(department); department.reset();" #department="ngForm">
+          <span>Name: </span>
+          <input type="text" ngModel name="name" #name="ngModel" class="form-control" required>
+          <span>Description: </span>
+          <input type="text" ngModel name="description" #description="ngModel" class="form-control" required>
+          <button class="form-control">ADD</button>
+      </form>
+  </div>
+</section>
